@@ -1,0 +1,15 @@
+default:
+  api:
+    db:
+      amazon:
+        region: 'your_aws_region'
+        accessKeyId: 'your_access_key'
+        secretAccessKey:  'your_secret_access_key'
+  iot:
+    mqtt:
+      host: 'your_host.iot.us-east-1.amazonaws.com'
+      ca: 'conf/keys/ca.pem'
+      cert: 'conf/keys/client.crt'
+      key: 'conf/keys/client.key'
+      type: 'aws'
+      tls: true

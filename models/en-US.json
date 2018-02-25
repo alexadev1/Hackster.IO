@@ -1,0 +1,73 @@
+{
+    "interactionModel":{
+        "languageModel":{
+            "invocationName":"smart development",
+            "types":[],
+            "intents":[
+                {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+                },
+                {
+                  "name": "LAMPBrightness",
+                  "slots":[
+                    {
+                        "name":"lamp",
+                        "type":"AMAZON.NUMBER"
+                    },
+                    {
+                        "name":"brightness",
+                        "type":"AMAZON.NUMBER"
+                    }
+
+                  ],
+                  "samples":[
+                      "set lamp {lamp} brightness {brightness}"
+                  ]
+                },
+                {
+                  "name": "CheckKettleStatus",
+                  "slots":[
+                    
+                  ],
+                  "samples":[
+                      "check water level in kettle"
+                  ]
+                },
+                {
+                    "name":"HelloWorldIntent",
+                    "slots":[
+
+                    ],
+                    "samples":[
+                        "hello",
+                        "say hello",
+                        "say hello world"
+                    ]
+                },
+                {
+                    "name":"MyNameIsIntent",
+                    "slots":[
+                        {
+                            "name":"name",
+                            "type":"AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples":[
+                        "my name is {name}",
+                        "i am {name}",
+                        "you can call me {name}"
+                    ]
+                }
+            ]
+        }
+    }
+}
